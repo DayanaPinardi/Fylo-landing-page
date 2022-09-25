@@ -1,0 +1,31 @@
+@use "variables";
+
+@mixin desktop ($width:unset, $height:unset, $font:unset, $margin:unset){
+    @media screen and (min-width:1220px){
+        width: $width;
+        height: $height;
+        font-size: $font;
+        margin: $margin;
+    }
+}
+
+@mixin button($height) {
+    width: 100%;
+    height: $height;
+    border: none;
+    border-radius: 5px;
+    background-color: variables.$Bright-Blue;
+    color: #fff;
+    cursor: pointer;
+    transition: .6s;
+    &:hover{
+        background-color: hsl(224, 97%, 70%);
+    }
+}
+
+@mixin flex($jcontent){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: $jcontent;
+    text-align: left;
+}
