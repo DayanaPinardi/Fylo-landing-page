@@ -18,30 +18,30 @@ body {
 }
 
 .header {
-    width: 375px;
+    width: 23.4375em;
     margin: auto;
-    padding: 25px 15px;
+    padding: 1.5625em 0.9375em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: variables.$font-Header;
-    @include mixins.desktop(1220px);
+    @include mixins.desktop(76.25em);
     
     .header-logo {
-        width: 100px;
-        @include mixins.desktop(800px, unset, unset, 0 0 0 60px);
+        width: 6.25em;
+        @include mixins.desktop(50em, unset, unset, 0 0 0 3.75em);
     }
     
     .header-navbar{
         .navbar {
-            width: 180px;
+            width: 11.25em;
             display: flex;
             justify-content: space-between;
-            @include mixins.desktop(300px);
+            @include mixins.desktop(18.75em);
             
             &__ul {
-                font-size: 14px;
-                @include mixins.desktop(unset, unset, 16px);
+                font-size: 0.875em;
+                @include mixins.desktop(unset, unset, 1em);
                 
             }
         }
@@ -49,37 +49,36 @@ body {
 }
 
 .main{
-    width: 375px;
+    width: 23.4375em;
     margin: 0 auto;
     @include mixins.desktop();
 }
 
 .section-getStarted {
     width: 100%;
-    margin-top: 100px;
-    padding: 0 20px;
+    margin-top: 6.25em;
+    padding: 0 1.25em;
     text-align: center;
     
 
     &__title{
-        margin-top: 50px;
-        font-size: 26px;
-        // font-family: variables.$font-Header;
+        margin-top: 3.125em;
+        font-size: 1.625em;
         font-weight: 700;
-        line-height: 35px;
+        line-height: 2.1875em;
     }
     &__description{
-        margin: 30px 0;
-        line-height: 25px;
+        margin: 1.875em 0;
+        line-height: 1.5625em;
 
     }
     &__email{
         width: 100%;
-        margin: 20px 0;
-        height: 50px;
-        border-radius: 5px;
-        border: 1px solid #000;
-        padding: 10px 20px;
+        margin: 1.25em 0;
+        height: 3.125em;
+        border-radius: 0.3125em;
+        border: 0.0625em solid #000;
+        padding: 0.625em 1.25em;
         
         &::placeholder{
             color: variables.$Light-Gray;
@@ -89,10 +88,10 @@ body {
         }
     }
     &__button {
-        @include mixins.button(50px);
+        @include mixins.button(3.125em);
     }
 
-    @media screen and (min-width:1220px) {
+    @media screen and (min-width:76.25em) {
         @include mixins.flex(space-around);
 
         img {
@@ -100,97 +99,97 @@ body {
         }
 
         div {
-            width: 600px;
+            width: 37.5em;
         }
         &__title{
-            font-size: 36px;
-            line-height: 50px;
+            font-size: 2.25em;
+            line-height: 3.125em;
             font-family: variables.$font-Header;
-            // font-weight: 700;
+
         }
         &__description{
-            padding-right: 80px;
+            padding-right: 5em;
         }
         &__email{
-            width: 300px;
-            margin-right: 10px;
+            width: 18.75em;
+            margin-right: 0.625em;
         }
         &__button{
-            width: 180px;
+            width: 11.25em;
 
         }
     }
 }
 
 .section-secureStorage{
-    margin-top: 100px;
+    margin-top: 6.25em;
     background-image: url(../images/bg-curve-mobile.svg);
     background-position: top;
     background-repeat: no-repeat;
-    padding-top: 50px;
+    padding-top: 3.125em;
     
     
     .secureStorage-ilustration{
-        padding: 50px 0;
+        padding: 3.125em 0;
         background-color: variables.$Light-Grayish-Blue;
     }
     .secureStorage-text{
         background-color: variables.$Light-Grayish-Blue;
         
         .secureStorage-description{
-            padding: 20px 20px;
+            padding: 1.25em 1.25em;
             &__title{
                 text-align: center;
-                padding: 25px 0;
-                font-size: 17.5px;
+                padding: 1.5625em 0;
+                font-size: 1.0938em;
                 font-family: variables.$font-Header;
                 font-size: 700;
             }
 
             &__text{
                 font-size: 0.9063em;
-                line-height: 25px;
-                margin-bottom: 20px;
+                line-height: 1.5625em;
+                margin-bottom: 1.25em;
                 color: hsl(0, 0%, 40%);
             }
             
             &__button{
                 display: block;
                 width: max-content;
-                margin: 40px auto 0;
+                margin: 2.5em auto 0;
                 font-size: 0.9063em;
-                padding-bottom: 6px;
+                padding-bottom: 0.375em;
                 color: variables.$Moderate-Cyan;
-                border-bottom: 1.6px solid variables.$Moderate-Cyan;
+                border-bottom: 0.1em solid variables.$Moderate-Cyan;
             }
         }
         
     }
         
-    @media screen and (min-width:1220px){
+    @media screen and (min-width:76.25em){
             @include mixins.flex(space-around);
             background-image: url(../images/bg-curve-desktop.svg);
-            padding-top: 100px;
-            height: 450px;
+            padding-top: 6.25em;
+            height: 28.125em;
     
             .secureStorage-ilustration{
                 &__img{
-                    padding-right: 60px;
-                    padding-top: 20px;
+                    padding-right: 3.75em;
+                    padding-top: 1.25em;
                 }
             }
     
             .secureStorage-text{
-                padding: 40px 60px;
+                padding: 2.5em 3.75em;
                 
                 .secureStorage-description{
                     &__title{
                         text-align: left;
-                        font-size: 30px;
+                        font-size: 1.875em;
                     }
     
                     &__text{
-                        width: 500px;
+                        width: 31.25em;
                     }
     
                     &__button{
@@ -208,46 +207,46 @@ body {
 }
 
 .section-card{
-    height: 300px;
-    padding-top: 30px;
+    height: 18.75em;
+    padding-top: 1.875em;
     background-color: variables.$Light-Grayish-Blue;
 
     .card{
-        box-shadow: 0px 0px 20px 2px variables.$Light-Gray;
-        width: 310px;
-        height: 220px;
+        box-shadow: 0em 0em 1.25em 0.125em variables.$Light-Gray;
+        width: 19.375em;
+        height: 13.75em;
         margin: auto;
-        font-size: 13px;
-        line-height: 20px;
-        padding: 20px;
+        font-size: 0.8125em;
+        line-height: 1.25em;
+        padding: 1.25em;
         background-color: #fff;
-        border-radius: 5px;
+        border-radius: 0.3125em;
     
         &__icon{
-            margin-bottom: 10px;
+            margin-bottom: 0.625em;
         }
     
         &__profile{
             display: flex;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 1.25em;
     
                 
     
             &-img {
-                width: 50px;
-                margin-right: 10px;
+                width: 3.125em;
+                margin-right: 0.625em;
                 border-radius: 50%;
             }
 
             &-name {
                 .name{
-                    margin-bottom: 5px;
+                    margin-bottom: 0.3125em;
                     font-weight: 700;
                     font-family: variables.$font-Header;
                 }
                 .occupation{
-                    font-size: 12px;
+                    font-size: 0.75em;
                  }
     
             }
@@ -255,113 +254,113 @@ body {
         }
     }
     
-    @media screen and (min-width:1220px){
-        height: 350px;
+    @media screen and (min-width:76.25em){
+        height: 21.875em;
         .card{
-            margin-left: 75px;
+            margin-left: 4.6875em;
         }
     }
 }
 
 .section-startFree{
-    padding: 60px;
+    padding: 3.75em;
     background-color: variables.$Desaturated-Blue;
     color: #fff;
     text-align: center;
     
     .startFree-description {
         &__title {
-            font-size: 17.5px;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
+            font-size: 1.0938em;
+            margin-bottom: 1.25em;
+            letter-spacing: 0.0625em;
         }
         &__text {
             font-size: 0.9063em;
-            margin-bottom: 20px;
+            margin-bottom: 1.25em;
         }
     }
     .startFree-inputs{
         &__email{
             width: 100%;
-            height: 40px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+            height: 2.5em;
+            margin-bottom: 0.625em;
+            border-radius: 0.3125em;
             border: none;
-            padding: 5px 10px;
-            box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.186);
+            padding: 0.3125em 0.625em;
+            box-shadow: 0em 0em 1.25em 0.125em rgba(0, 0, 0, 0.186);
             &::placeholder{
                 color: variables.$Light-Gray;
             }
         }
         &__button{
             width: 100%;
-            @include mixins.button(40px);
+            @include mixins.button(2.5em);
             box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.186);
 
         }
     }
 
-    @media screen and (min-width:1220px){
+    @media screen and (min-width:76.25em){
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: left;
-        height: 350px;
+        height: 21.875em;
         .startFree-description {
             width: 50%;
 
             &__title{
-                font-size: 24px;
+                font-size: 1.5em;
             }
             &__text{
-                width: 450px;
-                font-size: 15px;
-                line-height: 22px;
+                width: 28.125em;
+                font-size: 0.9375em;
+                line-height: 1.375em;
             }
         }
         .startFree-inputs{
             width: 50%;
 
             &__email{
-                width: 500px;
-                margin-bottom: 20px;
-                padding-left: 20px;
+                width: 31.25em;
+                margin-bottom: 1.25em;
+                padding-left: 1.25em;
             }
 
             &__button{
-                width: 200px;
-                font-size: 15px;
+                width: 12.5em;
+                font-size: 0.9375em;
             }
         }
     }
 }
 
 .footer{
-    width: 375px;
+    width: 23.4375em;
     margin: auto;
     background-color: variables.$Very-Dark-Blue;
     color: #fff;
     
     .footer-container{
-        padding: 60px 40px 0 40px;
+        padding: 3.75em 2.5em 0 2.5em;
 
         .footer-info{
             &__logo{
-                margin-bottom: 20px;
+                margin-bottom: 1.25em;
             }
             &__contact{
-                margin-bottom: 20px;
-                font-size: 15px;
+                margin-bottom: 1.25em;
+                font-size: 0.9375em;
                 img{
-                    padding-right: 10px;
+                    padding-right: 0.625em;
                 }
             }
         }
         .footer-links{
-            margin: 50px 0;
+            margin: 3.125em 0;
             .links {
                 &__li{
-                    margin-bottom: 15px;
+                    margin-bottom: 0.9375em;
                 &-a{
                     color: #fff;
                     transition: all .5s;
@@ -380,20 +379,20 @@ body {
         text-align: center;
         .icons{
             i{
-                border: 1px solid #fff;
+                border: 0.0625em solid #fff;
                 border-radius: 50%;
-                margin: 0 5px 20px;
+                margin: 0 0.3125em 1.25em;
                 cursor: pointer;
                 transition: all .5s;
 
                 &:nth-child(1){
-                    padding: 8px 11px;
+                    padding: 0.5em 0.6875em;
                 }
                 &:nth-child(2){
-                    padding: 8px 8px;
+                    padding: 0.5em 0.5em;
                 }
                 &:nth-child(3){
-                    padding: 8px 9px;
+                    padding: 0.5em 0.5625em;
                 }
                 &:hover{
                     color: variables.$Moderate-Cyan;
@@ -409,10 +408,10 @@ body {
     
     }
     .footer-attribution{
-        padding-bottom: 10px;
+        padding-bottom: 0.625em;
         .attribution{
             text-align: center;
-            font-size: 12px;
+            font-size: 0.75em;
             
             a{
                 color: #fff;
@@ -420,9 +419,9 @@ body {
         }
     }
 
-    @media screen and (min-width:1220px){
+    @media screen and (min-width:76.25em){
         width: 100%;
-        padding-top: 60px;
+        padding-top: 3.75em;
 
         .footer-container{
             display: flex;
@@ -431,31 +430,31 @@ body {
 
             .footer-info{
                 &__logo{
-                    width: 200px;
-                    margin-bottom: 50px;
+                    width: 12.5em;
+                    margin-bottom: 3.125em;
                 }
                 &__contact{
-                    margin-bottom: 30px;
+                    margin-bottom: 1.875em;
                 }
             }
             .footer-links{
-                margin-top: 120px;
+                margin-top: 7.5em;
                 .links {
                     &__li{
-                        margin-bottom: 30px;
+                        margin-bottom: 1.875em;
                     }
                 }
                 
             }
             .footer-icons{
-                margin-top: 120px;
+                margin-top: 7.5em;
             }
            
         }
         .footer-attribution{
-            margin-top: 60px;
+            margin-top: 3.75em;
             .attribution{
-                font-size: 13px;
+                font-size: 0.8125em;
             }
         }
     }
