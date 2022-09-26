@@ -160,6 +160,7 @@ body {
                 font-size: 0.9063em;
                 padding-bottom: 0.375em;
                 color: variables.$Moderate-Cyan;
+                outline: none;
                 border-bottom: 0.1em solid variables.$Moderate-Cyan;
             }
         }
@@ -199,6 +200,7 @@ body {
 
                         &:hover{
                             opacity: 60%;
+                            
                         }
                     }
                 }
